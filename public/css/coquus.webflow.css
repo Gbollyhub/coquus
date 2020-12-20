@@ -133,8 +133,8 @@
 }
 
 .af-view .af-class-app-slide.af-class-_1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/lily-banse--YHSwy6uqvk-unsplash.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/lily-banse--YHSwy6uqvk-unsplash.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('/images/lily-banse--YHSwy6uqvk-unsplash.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/lily-banse--YHSwy6uqvk-unsplash.jpg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
 }
@@ -263,11 +263,23 @@
   display: block;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/lily-banse--YHSwy6uqvk-unsplash.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/lily-banse--YHSwy6uqvk-unsplash.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('/images/lily-banse--YHSwy6uqvk-unsplash.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/lily-banse--YHSwy6uqvk-unsplash.jpg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
+  transform-origin: 0 0;
+  transform-style: preserve-3d;
+  animation: banner-image-animate 8s ease-in-out infinite alternate;
+}
+
+@keyframes banner-image-animate {
+  0% {
+      transform: scale3d(1, 1, 1);
+  }
+  100% {
+      transform: scale3d(1.09616, 1.09616, 1);
+  }
 }
 
 .af-view .af-class-form-block-3 {
@@ -329,7 +341,7 @@
 .af-view .af-class-feature-image {
   width: 100%;
   height: 100%;
-  background-image: url('../images/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg');
+  background-image: url('/images/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg');
   background-position: 0px 0px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -359,7 +371,7 @@
 .af-view .af-class-div-block-3 {
   height: 90vh;
   border-radius: 10px;
-  background-image: url('../images/angelos-michalopoulos-H-t_LuxDE_w-unsplash.jpg');
+  background-image: url('/images/angelos-michalopoulos-H-t_LuxDE_w-unsplash.jpg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -530,19 +542,19 @@
 }
 
 .af-view .af-class-app-section-2-flex-col-div.af-class-_1 {
-  background-image: url('../images/photo-1504113888839-1c8eb50233d3.jpg');
+  background-image: url('/images/photo-1504113888839-1c8eb50233d3.jpg');
 }
 
 .af-view .af-class-app-section-2-flex-col-div.af-class-_2 {
-  background-image: url('../images/photo-1504754524776-8f4f37790ca0.jpg');
+  background-image: url('/images/photo-1504754524776-8f4f37790ca0.jpg');
 }
 
 .af-view .af-class-app-section-2-flex-col-div.af-class-_3 {
-  background-image: url('../images/photo-1466978913421-dad2ebd01d17.jpg');
+  background-image: url('/images/photo-1466978913421-dad2ebd01d17.jpg');
 }
 
 .af-view .af-class-app-section-2-flex-col-div.af-class-_4 {
-  background-image: url('../images/photo-1572448862527-d3c904757de6.jpg');
+  background-image: url('/images/photo-1572448862527-d3c904757de6.jpg');
 }
 
 .af-view .af-class-app-section-2-flex-col-div-img-div {
@@ -551,7 +563,7 @@
   height: 100%;
   border-radius: 10px 10px 0px 0px;
   background-color: transparent;
-  background-image: url('../images/photo-1572448862527-d3c904757de6.jpg');
+  background-image: url('/images/photo-1572448862527-d3c904757de6.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -650,7 +662,7 @@
 .af-view .af-class-app-section-3-image {
   height: 85vh;
   border-radius: 10px;
-  background-image: url('../images/photo-1578205222752-3c0c49ee3b7a.jpg');
+  background-image: url('/images/photo-1578205222752-3c0c49ee3b7a.jpg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -736,14 +748,14 @@
   background-color: rgba(0, 0, 0, 0.58);
 }
 
-.af-view .af-class-app-auth-modal.af-class-login-modal {
+.af-view .af-class-app-auth-modal.af-class-app-auth-hide-modal {
   display: none;
 }
 
-.af-view .af-class-app-auth-modal.af-class-signup-modal {
-  display: none;
+.af-view .af-class-app-auth-modal.af-class-app-auth-show-modal {
+  opacity:1;
+  display: block;
 }
-
 .af-view .af-class-app-auth-div {
   position: absolute;
   left: auto;
@@ -780,7 +792,7 @@
   height: 500px;
   padding-right: 25px;
   border-radius: 10px;
-  background-image: url('../images/photo-1578205222752-3c0c49ee3b7a.jpg');
+  background-image: url('/images/photo-1578205222752-3c0c49ee3b7a.jpg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -953,7 +965,7 @@
   margin-top: 13px;
   margin-left: 48px;
   border-radius: 7px;
-  background-image: url('../images/photo-1494790108377-be9c29b29330.jpg');
+  background-image: url('/images/photo-1494790108377-be9c29b29330.jpg');
   background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1379,7 +1391,7 @@
 
 @font-face {
   font-family: 'Ionicons';
-  src: url('../fonts/ionicons.eot') format('embedded-opentype'), url('../fonts/ionicons.woff') format('woff'), url('../fonts/ionicons.ttf') format('truetype'), url('../fonts/ionicons.svg') format('svg');
+  src: url('/fonts/ionicons.eot') format('embedded-opentype'), url('/fonts/ionicons.woff') format('woff'), url('/fonts/ionicons.ttf') format('truetype'), url('/fonts/ionicons.svg') format('svg');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

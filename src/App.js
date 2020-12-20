@@ -1,6 +1,7 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Home from './views/Site/IndexView'
-import DashboardOverview from './views/Dashboard/DashboardView'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './views/Site/IndexView';
+import DashboardOverview from './views/Dashboard/DashboardView';
+
 function App() {
   return (
   <Router>
