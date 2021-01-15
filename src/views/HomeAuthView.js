@@ -294,4 +294,4 @@ HomeAuthView.Controller = function(){
 
 		throw e;
 	}
-}
+};
