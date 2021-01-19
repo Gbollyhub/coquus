@@ -1,9 +1,9 @@
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
-import userService from '../../Services/User';
-import { getApiOptions } from '../../Services/webRouter';
-import { getGeoLocation } from '../../Services/Geolocation';
+import userService from '../../services/User';
+import { getApiOptions } from '../../services/webRouter';
+import { getGeoLocation } from '../../services/Geolocation';
 
 function Login(props) {
 

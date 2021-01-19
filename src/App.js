@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './views/Site/IndexView';
-import { setGeoLocation } from './Services/Geolocation';
+import { setGeoLocation } from './services/Geolocation';
 import DashboardOverview from './views/Dashboard/DashboardView';
 
 function App() {
