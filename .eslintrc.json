@@ -1,0 +1,40 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "generators": true,
+            "arrowFunctions": true
+        },
+        "ecmaVersion": 2020
+    },
+    "plugins": [
+        "react",
+        "react-hooks"
+    ],
+    "settings": {
+        "react":{
+            "version":"detect"
+        }
+    },
+    "rules": {
+        "eqeqeq": "warn",
+        "semi": "warn",
+        "no-unused-vars": "warn",
+        "react/react-in-jsx-scope": "off"
+    },
+    "env": {
+        "node": true,
+        "mocha": true
+    },
+    "globals": {
+        "expect": true,
+        "window": true,
+        "Promise": true,
+        "Reflect": true,
+        "document": true,
+        "navigator":true
+    }
+}
