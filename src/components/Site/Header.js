@@ -10,7 +10,7 @@ function Header(prop) {
 				<nav role="navigation" className="w-nav-menu">
 					<Link to="/" className="af-class-app-nav-link w-nav-link">Home</Link>
 					<Link to="/about" className="af-class-app-nav-link w-nav-link">About</Link>
-					<Link to="/shop" className="af-class-app-nav-link w-nav-link">Shop</Link>
+					<Link to="/find-restuarants" className="af-class-app-nav-link w-nav-link">Restaurants</Link>
 					<Link to="/support" className="af-class-app-nav-link w-nav-link">Support</Link>
 					<div onClick={() => { prop.handleShow({ show: true, context: 'login' }); }} className="af-class-app-nav-link af-class-login w-nav-link">Login</div>
 					<div to="#" onClick={() => { prop.handleShow({ show: true, context: 'register' }); }} className="af-class-app-nav-button w-button">Create account</div>

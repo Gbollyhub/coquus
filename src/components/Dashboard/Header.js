@@ -7,6 +7,7 @@ function Header() {
 					<div className="af-class-app-logo-text af-class-dashboard-logo">L<span className="af-class-text-span">O</span>G<span className="af-class-text-span-2">O</span></div>
 				</Link>
 				<nav role="navigation" className="af-class-nav-menu-2 w-nav-menu">
+				<div className="w-nav-link" style = {{ color: "#fe5634", cursor: "pointer" }}><span className="app-icon"></span>Create Product</div>
 					<div className="w-nav-link">16th, August, 2020</div>
 					<div className="af-class-dashboard-profile-link" />
 				</nav>

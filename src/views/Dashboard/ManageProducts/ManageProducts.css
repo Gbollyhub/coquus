@@ -1,0 +1,17 @@
+
+.action-btn{
+    color: white;
+    padding:10px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right:20px;
+    cursor: pointer;
+}
+
+.enable{
+    background:rgb(121, 208, 51);
+}
+
+.disable{
+    background-color: rgb(226, 59, 59);
+}

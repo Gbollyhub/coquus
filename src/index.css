@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+table {
+  width: 100%;
+  border-collapse:separate; 
+  border-spacing:0 15px; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.table-view-all {
+  text-align:right;
+  color:#eb3b3b;
+  font-size:12px;
+  display: block;
+  text-decoration: underline;
+}
+
+th {
+  text-align: left;
+  padding:  10px 15px !important;
+  font-size: 12px;
+}
+
+ td {
+  text-align: left;
+  padding: 15px !important;
+  font-size: 12px;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+
+tr:nth-child(even) {
+ 
+}
+
+
+.transactions-col{
+    padding: 20px !important;
 }
