@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
+import './styles/normalize.css';
+import './styles/webflow.css';
+import './styles/coquus.css';
 
 ReactDOM.render(
   <React.StrictMode>
