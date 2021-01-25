@@ -1,0 +1,35 @@
+.app-table2 {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .table-view-all {
+    text-align:right;
+    color:#eb3b3b;
+    font-size:12px;
+    display: block;
+    text-decoration: underline;
+  }
+  
+  .app-table2-header {
+    text-align: left;
+    padding:  10px 15px !important;
+    font-size: 12px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+  }
+
+   .app-table2-data {
+    text-align: left;
+    padding: 15px !important;
+    font-size: 12px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+  }
+  
+  tr:nth-child(even) {
+   
+  }
+
+
+  .transactions-col{
+      padding: 20px !important;
+  }

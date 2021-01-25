@@ -1,3 +1,8 @@
+.app-icon{
+  font-family: 'ionicons';
+  margin-right: 10px;
+}
+
 .app-nav-dropdown-trigger{
   position: relative;
 }
@@ -896,7 +901,7 @@
   width: 100%;
   padding: 12px 19px;
   color: #dcaa80;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 30px;
   text-decoration: none;
 }
@@ -943,7 +948,7 @@
 }
 
 .af-view .af-class-dashboard-nav-list-item {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 0px;
   background-color: transparent;
   text-align: left;
@@ -1077,11 +1082,12 @@
 }
 
 .af-view .af-class-overview-table-div {
-  height: 400px;
+  height: auto;
   border-style: solid;
   border-width: 1px;
   border-color: #eaeaea;
   border-radius: 7px;
+  padding: 10px;
 }
 
 .af-view .af-class-auth-close {
