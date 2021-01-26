@@ -2,37 +2,68 @@ import axios from 'axios';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import userService from '../../services/User';
-import { getApiOptions } from '../../services/webRouter';
 import { getGeoLocation } from '../../services/Geolocation';
+import { apiRequest, getApiOptions } from '../../services/webRouter';
 
 function Login(props) {
 
 	const [username, setUsername] = useState('');
 	const [password, setPassword] = useState('');
+	const [inValid, setInValid] = useState(false);
+	const [isChecked, setIsChecked] = useState(false);
+	const [isValidCredential, setIsValidCredential] = useState(false);
+
+	const reset = () => {
+		setInValid(false);
+		setIsValidCredential(false);
+	};
 
 	const handleClick = () => {
-		axios(getApiOptions({
+
+		if (!username || !password) {
+			setInValid(true);
+			return;
+		}
+
+		apiRequest(getApiOptions({
 			method: 'POST',
 			url: '/api/v1/login',
 			data: { username, password, geo: getGeoLocation() }
 		})).then(({ data }) => {
-			const info = JSON.parse(data.body);
-			const auth = userService.getAuthUserOption(info);
-			props.handleAuth(auth);
-			userService.setAuthUser(auth);
-			props.handleShow({ show: false, context: '' });
-		}).catch(err => {
-			console.log(err);
+			const { messageCode } = data;
+			if (messageCode === 200) {
+				delete data.messageCode;
+				const auth = userService.getAuthUserOption(data);
+				props.handleAuth(auth);
+				userService.setAuthUser(auth);
+				props.handleShow({ show: false, context: '' });
+			} else {
+				setUsername('');
+				setPassword('');
+				setIsValidCredential(true);
+			}
 		});
 	};
+
+	useEffect(() => {
+		if (username.length > 0 || password.length > 0)
+			reset();
+	}, [username, password]);
 
 	return (
 		<>
 			<div className="af-class-app-authheader">Login into your account</div>
 			<div className="af-class-app-auth-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
+			{inValid && <div className="af-class-app-auth-sub">* username and password is required</div>}
+			{isValidCredential && <div className="af-class-app-auth-sub">Invalid credentials please enter the correct username/password</div>}
 			<div className="w-form">
-				<input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="username" placeholder="Username" />
-				<input type="text" value={password} onChange={(e) => setPassword(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="password" placeholder="Password" />
+				<input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="username" placeholder="Username" required />
+				{isChecked ?
+					<input type="text" value={password} onChange={(e) => setPassword(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="password" placeholder="Password" required />
+					:
+					<input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="password" placeholder="Password" required />
+				}
+				<input type="checkbox" checked={isChecked} onChange={(e) => setIsChecked(e.target.checked)} name="show_password" />  Show password
 				<a href="#" className="af-class-app-button w-button" onClick={handleClick}>Login into account</a>
 				<div className="w-form-done">
 					<div>Thank you! Your submission has been received!</div>
@@ -88,8 +119,8 @@ function Register(props) {
 				<input type="text" value={lastname} onChange={(e) => setLastname(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="lastname" placeholder="Last Name" />
 				<input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="username" placeholder="Username" />
 				<input type="text" value={email} onChange={(e) => setEmail(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="email" placeholder="Email Address" />
-				<input type="text" value={password} onChange={(e) => setPassword(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="password" placeholder="Password" />
-				<input type="text" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="confirm_password" placeholder="Confirm Password" />
+				<input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="password" placeholder="Password" />
+				<input type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="confirm_password" placeholder="Confirm Password" />
 				<a href="#" onClick={handleClick} className="af-class-app-button w-button">Get Started</a>
 				<div className="w-form-done">
 					<div>Thank you! Your submission has been received!</div>

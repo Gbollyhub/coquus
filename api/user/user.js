@@ -14,26 +14,26 @@ exports.handler = async function (event) {
 		if (!username || !password)
 			return {
 				headers,
-				statusCode: 400,
-				body:"Invalid credentials username/password is required"
+				statusCode: 200,
+				body: JSON.stringify({ messageCode: 400, message: "Invalid credentials username/password is required" })
 			};
 		const user = getUserByUsername(username, password);
 		if (!user)
 			return {
 				headers,
-				statusCode: 400,
-				body:"Invalid username/password user not found"
+				statusCode: 200,
+				body: JSON.stringify({ messageCode: 400, message: "Invalid username/password user not found" })
 			};
 		return {
 			headers,
 			statusCode: 200,
-			body: JSON.stringify(user.user_info),
+			body: JSON.stringify({ messageCode: 200, ...user.user_info }),
 		};
 	} catch (error) {
 		return {
 			headers,
-			statusCode: 500,
-			body: "Unexpected exception thrown",
+			statusCode: 200,
+			body: JSON.stringify({ messageCode: 500, message: "Unexpected exception thrown" }),
 		};
 	}
 };

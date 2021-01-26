@@ -38,12 +38,13 @@ app.use(express.static(appPublic));
 app.post('/api/v1/login', async (req, res) => {
 	const { body } = req;
 	const user = await apis.user.handler(body);
-	res.status(user.statusCode).json(user);
+	res.status(200).json(user);
 });
 
 app.post('/api/v1/signup', async (req, res) => {
 	const { body } = req;
 	const payload = JSON.stringify({
+		messageCode:200,
 		first_name: body.firstname,
 		last_name: body.lastname,
 		email: body.email,

@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar2 from '../../../components/Navbar2/Navbar2';
 import Footer from '../../../components/Site/Footer';
-import './Search.css'
-import '../Site.css'
+import './Search.css';
+import '../Site.css';
  const Search = () => {
   return (
 		<span>

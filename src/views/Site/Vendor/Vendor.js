@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar2 from '../../../components/Navbar2/Navbar2';
 import Footer from '../../../components/Site/Footer';
-import './Vendor.css'
-import '../Site.css'
+import './Vendor.css';
+import '../Site.css';
  const Vendor = () => {
   return (
 		<span>

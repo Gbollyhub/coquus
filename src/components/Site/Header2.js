@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function Header2(prop) {
+function Header2() {
 	return (
 		<div>
 			<div className="app-navbar-2">
