@@ -1,4 +1,3 @@
-import axios from 'axios';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import userService from '../../services/User';
@@ -91,7 +90,7 @@ function Register(props) {
 	const [confirmPassword, setConfirmPassword] = useState('');
 
 	const handleClick = () => {
-		axios(getApiOptions({
+		apiRequest(getApiOptions({
 			method: 'POST',
 			url: '/api/v1/signup',
 			data: { email, username, firstname, lastname, password, geo: getGeoLocation() }
