@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
-import userService from '../../services/User';
-import { getGeoLocation } from '../../services/Geolocation';
-import { apiRequest, getApiOptions } from '../../services/webRouter';
+import userService from '../../Services/User';
+import { getGeoLocation } from '../../Services/Geolocation';
+import { apiRequest, getApiOptions } from '../../Services/webRouter';
 
 function Login(props) {
 
@@ -54,7 +54,7 @@ function Login(props) {
 			<div className="af-class-app-authheader">Login into your account</div>
 			<div className="af-class-app-auth-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
 			{inValid && <div className="af-class-app-auth-sub">* username and password is required</div>}
-			{isValidCredential && <div className="af-class-app-auth-sub">Invalid credentials please enter the correct username/password</div>}
+			{isValidCredential && <div className="af-class-app-auth-sub" style={{ color: '#d43131'}}>Invalid credentials please enter the correct username/password</div>}
 			<div className="w-form">
 				<input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="af-class-app-auth-textfield w-input" maxLength={256} name="username" placeholder="Username" required />
 				{isChecked ?
@@ -95,7 +95,7 @@ function Register(props) {
 			url: '/api/v1/signup',
 			data: { email, username, firstname, lastname, password, geo: getGeoLocation() }
 		})).then(({ data }) => {
-			const info = JSON.parse(data.body);
+			const info = JSON.stringify(data.body);
 			const auth = userService.getAuthUserOption(info);
 			props.handleAuth(auth);
 			userService.setAuthUser(auth);

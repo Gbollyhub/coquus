@@ -4,6 +4,7 @@ import Sidebar from '../../../components/Dashboard/Sidebar';
 import '../Dashboard.css';
 import './ManageProducts.css';
 import Pagination from '@material-ui/lab/Pagination';
+import { Link } from 'react-router-dom'
 
 export default function ManageProducts() {
 
@@ -29,6 +30,7 @@ export default function ManageProducts() {
         <div className="app-table-buttons">
 		<div className="action-btn enable"><span className="app-icons"></span>Enable</div>
 		<div className="action-btn disable"><span className = "app-icons"></span>Disable</div>
+		<Link to="/dashboard/create-product"><div className="action-btn misc"><span className="app-icons"></span>New Product</div></Link>
 		<select className="app-input-select">
   <option>Filter By</option>
   <option>Active Products</option>
@@ -62,7 +64,7 @@ export default function ManageProducts() {
 											<td className="app-table-data">$100</td>
 											<td className="app-table-data" style={{ color: '#9be645'}}>Active</td>
 											<td className="app-table-data">20th Jan, 2021</td>
-											<td className="app-table-data" > <div className="table-btn">Edit</div></td>
+											<td className="app-table-data" > <Link to="/dashboard/edit-product"><div className="table-btn">Edit</div></Link></td>
 										</tr>	
 										<tr className="app-table-row">
 										<th className="app-table-header"><input type="checkbox"/></th>
@@ -72,19 +74,19 @@ export default function ManageProducts() {
 											<td className="app-table-data">$100</td>
 											<td className="app-table-data" style={{ color: '#eb3b3b'}}>Inactive</td>
 											<td className="app-table-data">20th Jan, 2021</td>
-											<td className="app-table-data" > <div className="table-btn">Edit</div></td>
+											<td className="app-table-data" ><Link to="/dashboard/edit-product"><div className="table-btn">Edit</div></Link></td>
 										</tr>	
 										</tbody>										
 									
 										</table>
+					
+										</div>
 										<br></br>
 										<div>
 										<div className="pagination">
       <Pagination count={10} shape="rounded" />
     </div>
 										</div>
-										
-								</div>
 							</div>
 						</div>
 					</div>

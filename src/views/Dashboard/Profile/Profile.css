@@ -1,6 +1,7 @@
 .profile-row{
     display: flex;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .profile-col-1 {
@@ -58,3 +59,68 @@ input[type=file] {
 .profile-btn:hover {
     background-color: #1b1b1b;
 }
+
+
+
+.action-btn{
+    color: white;
+    padding:10px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right:20px;
+    cursor: pointer;
+}
+
+.enable{
+    background:rgb(121, 208, 51);
+}
+
+.disable{
+    background-color: rgb(226, 59, 59);
+}
+
+.misc {
+    background-color: #fe5634;
+}
+
+
+.category-list {
+
+}
+
+.cat-chip{
+    display: inline-block;
+    margin-right: 15px;
+    background: rgb(241, 241, 241);
+    border-radius: 3px;
+    padding: 10px;
+    color: rgb(138, 138, 138);
+}
+
+
+@media screen and (max-width: 767px) {
+    .cat-chip{
+     margin-bottom: 20px;
+    }
+
+.misc {
+    margin-top: 20px;
+}
+    .profile-avater{
+        margin-top: 20px;
+    }
+    .profile-col-1 {
+        flex-basis: 100%;
+    }
+    .profile-col-2 {
+        flex-basis: 100%;
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 479px) {
+  
+  
+  }
+  

@@ -1,6 +1,7 @@
 .app-table2 {
     border-collapse: collapse;
     width: 100%;
+    overflow: scroll;
   }
 
   .table-view-all {
@@ -9,6 +10,7 @@
     font-size:12px;
     display: block;
     text-decoration: underline;
+    padding: 10px 20px;
   }
   
   .app-table2-header {

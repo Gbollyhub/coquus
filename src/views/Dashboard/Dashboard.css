@@ -4,6 +4,10 @@
     margin-bottom: 20px;
   }
 
+  .app-table-div{
+    overflow-x: scroll;
+  }
+
   .table-total {
       margin-top:20px;
     text-align:right;
@@ -24,6 +28,10 @@
     padding: 15px !important;
     font-size: 12px;
     border-bottom: 1px solid rgb(236, 236, 236);
+  }
+
+  .app-table-data a {
+  text-decoration: none;
   }
 
   .table-btn {
@@ -61,6 +69,15 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  .app-table-search{
+ 
+  }
+
+  .app-table-buttons {
+    
   }
 
   .app-input-search{
@@ -78,6 +95,12 @@
   margin-right: 10px;
 }
 
+.app-icons-misc{
+  font-family: 'ionicons';
+  margin-left: 10px;
+  cursor: pointer;
+}
+
 .app-icons-big{
   font-family: 'ionicons';
   margin-right: 20px;
@@ -90,9 +113,135 @@
   font-size: 12px;
 }
 
+.app-textfield::placeholder{
+  font-size: 12px;
+}
+
 .app-divider{
     height: 1px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #ededed;
+}
+
+.app-textfield-label {
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.menu-btn3 {
+  line-height: 80px;
+  color: #fe5634;
+  font-size: 39px;
+  font-family: 'Ionicons';
+}
+
+.dashboard-menu-overlay{
+  overflow-y:scroll;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  z-index: 99999;
+  width: 100%;
+  height: 100vh;
+  padding: 30px 0px;
+    justify-content: center;
+    background-color: #fff7e9;
+    text-align: left;
+}
+
+.app-content-div{
+   
+}
+
+.content-row{
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 40px;
+}
+
+.content-col {
+    flex: 0 33.3%;
+    margin-bottom: 20px;
+}
+
+.upload-box{
+    border: 1.5px dashed #e6e6e6;
+    border-radius: 3px;
+    height: 100px;
+    background: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:12px;
+    margin-bottom: 40px;
+    padding: 20px;
+
+}
+
+.upload-image {
+    margin-right:10px
+}
+
+@media screen and (max-width: 767px) {
+
+  .content-col {
+    flex: 0 100%;
+}
+
+.upload-box{
+  border: 1.5px dashed #e6e6e6;
+  border-radius: 3px;
+  height: 100px;
+  background: rgb(247, 247, 247);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:12px;
+  margin-bottom: 40px;
+
+}
+
+  .app-table-actions {
+    display: flex;
+    -webkit-box-pack:start;
+    -webkit-justify-content: left;
+    -ms-flex-pack: start;
+    justify-content:start;
+    margin-bottom: 30px;
+  }
+
+  .app-table-search{
+   flex-basis: 100%;
+  }
+
+  .app-table-buttons {
+    margin-top: 20px;
+    flex-basis:100%;
+  }
+
+  .app-textfield{
+    margin-top: 10px !important;
+    width: 100% !important;
+  }
+
+  .app-input-search{
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+
+.app-input-select{
+  width: 100% !important;
+  margin-top: 10px !important;
+}
+
+}
+
+
+@media screen and (max-width: 479px) {
+
+
 }
