@@ -1,0 +1,117 @@
+.app-modal-overlay {
+    z-index: 9999;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: visible;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .app-modal-div {
+    position: relative;
+    width: 35%;
+    height: 55vh;
+    padding: 35px 46px 0px;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+  
+  .app-modal-div.success {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .app-modal-header {
+    color: #1d1d1d;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .app-modal-heading {
+    margin-bottom: 35px;
+  }
+  
+  .app-modal-form-field {
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+  
+  .app-modal-select-field {
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+  
+  .app-modal-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 9px 31px;
+    border-radius: 5px;
+    background-color: #1d1d1d;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .app-modal-close {
+    position: absolute;
+    left: auto;
+    top: 9%;
+    right: 10%;
+    bottom: auto;
+    font-family: Ionicons, sans-serif;
+    color: #1d1d1d;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .alert-icon {
+    margin-bottom: 63px;
+    font-family: Ionicons, sans-serif;
+    color: #64ff61;
+    font-size: 100px;
+  }
+  
+  .alert-icon.failed {
+    color: #ff6161;
+  }
+  
+  .alert-message {
+    color: #1d1d1d;
+    font-size: 18px;
+    font-weight: 600;
+  }

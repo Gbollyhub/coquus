@@ -48,6 +48,7 @@ export default function Orders() {
         </div>
       </div>
 							<div>
+								<div>
 									<div className="app-table-div">
 										
 									<table className="app-table">
@@ -100,13 +101,16 @@ export default function Orders() {
 										
 										
 										</table>
-										<br></br>
-										<div>
+									
+										
+								</div>
+								<br></br>
+								<div>
 										<div className="pagination">
       <Pagination count={10} shape="rounded" />
     </div>
 										</div>
-										
+
 								</div>
 							</div>
 						</div>

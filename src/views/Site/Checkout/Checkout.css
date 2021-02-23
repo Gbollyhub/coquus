@@ -1,0 +1,140 @@
+
+.checkout-section{
+  margin-top: 80px;
+}
+.checkout-col {
+    padding: 33px;
+  }
+  
+  .checkout-header {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .delivery-address-box-row {
+    display: block;
+    margin-bottom: 35px;
+    padding: 33px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 11px 0 #e6e6e6;
+  }
+  
+  .delivery-address-box-col-1 {
+    padding-right: 36px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 50%;
+    -ms-flex: 0 50%;
+    flex: 0 50%;
+  }
+  
+  .delivery-address-box-col-2 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 50%;
+    -ms-flex: 0 50%;
+    flex: 0 50%;
+  }
+  
+  .default-checkout-box {
+    height: 100px;
+    padding: 20px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 100%;
+    -ms-flex: 0 100%;
+    flex: 0 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .default-checkout-box.active-checkbox-box {
+    padding: 20px;
+    border-color: #fe5634;
+  }
+  
+  .address-box-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 23px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .address-sub {
+    margin-bottom: 15px;
+    color: #919191;
+    font-size: 13px;
+  }
+  
+  .add-new-address {
+    margin-bottom: 23px;
+    color: #fe5634;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .address-value-header {
+    margin-bottom: 7px;
+    font-weight: 500;
+  }
+  
+  .address-value {
+    color: #919191;
+    font-size: 12px;
+  }
+
+
+  @media screen and (max-width: 991px) {
+    .checkout-col {
+      padding: 30px;
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .checkout-col {
+      padding: 10px;
+    }
+    .delivery-address-box-col-1 {
+      margin-bottom: 26px;
+      padding-right: 0px;
+      -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+    }
+  
+    .address-sub {
+      font-size: 12px;
+    }
+  }
+
+
+  @media screen and (max-width: 479px) {
+    .checkout-col {
+      padding: 10px;
+    }
+    .delivery-address-box-row {
+      padding: 27px;
+    }
+  
+    .delivery-address-box-col-1 {
+      padding-right: 0px;
+    }
+  
+    .default-checkout-box {
+      padding: 15px;
+    }
+  
+    .default-checkout-box.active-checkbox-box {
+      padding: 15px;
+    }
+
+  }

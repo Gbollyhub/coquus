@@ -4,7 +4,7 @@
     top: 0%;
     right: auto;
     bottom: auto;
-    z-index: 99999999;
+    z-index: 9999;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -54,8 +54,69 @@
     font-family: Ionicons, sans-serif;
   }
 
+  .app-gen-button{
+    background: #fe5634;
+    padding: 10px;
+    color:white;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+    transition: all .2ms;
+  }
+
+  .app-gen-button:hover{
+    background: #313131;
+  }
+
+  .app-textarea{
+    padding:10px;
+    margin-top: 10px !important;
+  }
+
+  .app-textarea::placeholder{
+    color: #919191;
+    font-size: 13px;
+  }
+
+  .menu-btn {
+    color: #fff;
+    font-size: 39px;
+  }
+
+  .menu-btn2 {
+    display: none;
+    line-height: 70px;
+    color: rgb(30, 30, 30);
+    font-size: 30px;
+    font-family: 'Ionicons';
+  }
+
+  .banner-search-div{
+    width: 60%;
+  }
+  .banner-search-area{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .banner-search-col{
+    flex-basis: 33.3%;
+    display: flex;
+   justify-content: center;
+  }
+  .banner-search-col a{
+width: 90%;
+  }
+
   @media screen and (max-width: 991px) {
-    
+    .banner-search-div{
+      width: 100%;
+    }
+    .banner-search-col{
+      flex-basis: 100%;
+    }
     .menu-icon {
       color: #fff;
       font-size: 40px;
@@ -89,8 +150,16 @@
   }
   
   @media screen and (max-width: 767px) {
-   
-  
+    .banner-search-col a{
+      width: 100%;
+        }
+    .menu-btn2 {
+      display: block;
+      line-height: 70px;
+      color: rgb(30, 30, 30);
+      font-size: 30px;
+      font-family: 'Ionicons';
+    }
     .app-search-col {
       -webkit-flex-basis: 50%;
       -ms-flex-preferred-size: 50%;
@@ -125,7 +194,17 @@
   
   @media screen and (max-width: 479px) {
    
-  
+    .app-gen-button{
+      margin-top:20px;
+      background: #fe5634;
+      padding: 10px;
+      color:white;
+      border-radius: 3px;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+      transition: all .2ms;
+    }
    
     .app-nav-links {
       display: none;

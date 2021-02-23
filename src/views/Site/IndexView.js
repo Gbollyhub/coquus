@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../../components/Site/Footer';
 import Navbar from '../../components/Navbar/Navbar';
-
+import { Link } from 'react-router-dom'
 export default function IndexView() {
 
 	return (
@@ -13,7 +13,29 @@ export default function IndexView() {
 						<div className="af-class-app-banner-heading">
 							<div className="af-class-app-banner-header">Order food anytime &amp; anywhere</div>
 							<div className="af-class-app-banner-sub">Hey! Our delicious food is waiting for you, we are always near to you</div>
-							<div className="af-class-form-block-3 w-form">
+							<div className="banner-search-div">
+									<div className="banner-search-area">
+								 <div className="banner-search-col">
+								 <select style={{ width: "90%"}} className="app-input-select">
+									<option>Location</option>
+									<option>Location1</option>
+									<option>Location2</option>
+									</select>
+								 </div>
+								 <div className="banner-search-col">
+								 <select style={{ width: "90%"}} className="app-input-select">
+									<option>Location</option>
+									<option>Location1</option>
+									<option>Location2</option>
+									</select>
+								 </div>
+								 <div className="banner-search-col">
+								<Link to="/find-restuarants"><div className="app-gen-button">Search</div></Link> 
+								 </div>
+							</div>
+							</div>
+						
+							{/* <div className="af-class-form-block-3 w-form">
 								<form id="email-form" name="email-form" data-name="Email Form">
 									<div className="w-row">
 										<div className="w-col w-col-9"><input type="text" className="af-class-app-banner-search-field w-input" maxLength={256} name="app-banner-search" data-name="app-banner-search" placeholder="Search for something..." id="app-banner-search" /></div>
@@ -22,13 +44,7 @@ export default function IndexView() {
 										</div>
 									</div>
 								</form>
-								<div className="w-form-done">
-									<div>Thank you! Your submission has been received!</div>
-								</div>
-								<div className="w-form-fail">
-									<div>Oops! Something went wrong while submitting the form.</div>
-								</div>
-							</div>
+							</div> */}
 						</div>
 						<div className="af-class-app-banner-image" />
 						<div className="banner-image-animate" />

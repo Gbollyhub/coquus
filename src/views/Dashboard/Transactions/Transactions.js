@@ -78,14 +78,15 @@ export default function Transactions() {
 										
 										
 										</table>
-										<br></br>
+									
+										
+								</div>
+								<br></br>
 										<div>
 										<div className="pagination">
       <Pagination count={10} shape="rounded" />
     </div>
 										</div>
-										
-								</div>
 							</div>
 						</div>
 					</div>

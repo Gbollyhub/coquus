@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../../components/Dashboard/Header';
 import Sidebar from '../../../components/Dashboard/Sidebar';
 import './DashboardView.css';
-
+import { Link } from 'react-router-dom'
 export default function DashboardView() {
 	return (
 		<span>
@@ -70,8 +70,7 @@ export default function DashboardView() {
 											<td className="app-table2-data" style={{ color: '#9be645'}}>Success</td>
 										</tr>
 										</table>
-										<br></br>
-										<div className = "table-view-all">View All</div>
+										<Link to= "/dashboard/transactions" ><div className = "table-view-all">View All</div></Link>
 									</div>
 								</div>
 								<div className="w-col w-col-6">
@@ -115,8 +114,7 @@ export default function DashboardView() {
 											<td className="app-table2-data" style={{ color: '#e6b629'}}>Pending</td>
 										</tr>
 										</table>
-										<br></br>
-										<div className = "table-view-all">View All</div>
+										<Link to= "/dashboard/orders"><div className = "table-view-all">View All</div></Link>
 									</div>
 								</div>
 							</div>

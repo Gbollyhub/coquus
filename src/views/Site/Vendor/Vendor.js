@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import Navbar2 from '../../../components/Navbar2/Navbar2';
 import Footer from '../../../components/Site/Footer';
 import './Vendor.css';
 import '../Site.css';
+
  const Vendor = () => {
   return (
 		<span>
@@ -27,7 +29,7 @@ import '../Site.css';
               <div className="menu-header">Large Burger</div>
               <div className="div-block-12">
                 <div className="cart-price">$100</div>
-                <div className="cart-price"><span className="menu-icon"></span>Add to Cart</div>
+                <div className="cart-action2"><span className="menu-icon"></span>Add to Cart</div>
               </div>
             </div>
           </div>
@@ -39,7 +41,7 @@ import '../Site.css';
               <div className="menu-header">Large Burger</div>
               <div className="div-block-12">
                 <div className="cart-price">$100</div>
-                <div className="cart-price"><span className="menu-icon"></span>Add to Cart</div>
+                   <div className="cart-action2"><span className="menu-icon"></span>Add to Cart</div>
               </div>
             </div>
           </div>
@@ -51,7 +53,7 @@ import '../Site.css';
               <div className="menu-header">Large Burger</div>
               <div className="div-block-12">
                 <div className="cart-price">$100</div>
-                <div className="cart-price"><span className="menu-icon"></span>Add to Cart</div>
+                   <div className="cart-action2"><span className="menu-icon"></span>Add to Cart</div>
               </div>
             </div>
           </div>
@@ -63,7 +65,7 @@ import '../Site.css';
               <div className="menu-header">Large Burger</div>
               <div className="div-block-12">
                 <div className="cart-price">$100</div>
-                <div className="cart-price"><span className="menu-icon"></span>Add to Cart</div>
+                   <div className="cart-action2"><span className="menu-icon"></span>Add to Cart</div>
               </div>
             </div>
           </div>
@@ -144,7 +146,7 @@ import '../Site.css';
           <div className="cart-summary-col-1">Subtotal (4 meals)</div>
           <div className="cart-summary-col-2">$400</div>
         </div>
-        <div className="checkout-btn">Checkout</div>
+        <Link to="/checkout"><div className="checkout-btn">Checkout</div></Link>
       </div>
     </div>
   </div>
