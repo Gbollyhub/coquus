@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
-import userService from '../../Services/User';
-import { getGeoLocation } from '../../Services/Geolocation';
-import { apiRequest, getApiOptions } from '../../Services/webRouter';
+import userService from '../../services/User';
+import { getGeoLocation } from '../../services/Geolocation';
+import { apiRequest, getApiOptions } from '../../services/webRouter';
 
 function Login(props) {
 

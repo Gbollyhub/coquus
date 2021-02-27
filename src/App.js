@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { setGeoLocation } from './Services/Geolocation';
+import { setGeoLocation } from './services/Geolocation';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './views/Site/IndexView';
 import Search from './views/Site/Search/Search';

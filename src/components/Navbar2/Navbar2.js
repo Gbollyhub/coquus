@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header2 from '../Site/Header2';
 import AuthModal from '../Site/AuthModal';
-import {getAuthUser, setLogoutUser} from '../../Services/User';
+import {getAuthUser, setLogoutUser} from '../../services/User';
 
 export default function Navbar2() {
 	const [user, setUser] = useState(getAuthUser());
