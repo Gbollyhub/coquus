@@ -1,4 +1,4 @@
-.app-modal-overlay {
+.modal-overlay {
     z-index: 9999;
     position: fixed;
     left: 0%;
@@ -23,7 +23,7 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
   
-  .app-modal-div {
+  .modal-div {
     position: relative;
     width: 35%;
     height: 55vh;
@@ -32,7 +32,7 @@
     background-color: #fff;
   }
   
-  .app-modal-div.success {
+  .modal-div.success {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -87,7 +87,7 @@
     text-decoration: none;
   }
   
-  .app-modal-close {
+  .modal-close {
     position: absolute;
     left: auto;
     top: 9%;
@@ -114,4 +114,27 @@
     color: #1d1d1d;
     font-size: 18px;
     font-weight: 600;
+  }
+
+
+  @media screen and (max-width: 991px) {
+    .modal-div {
+      width: 50%;
+    }
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+
+    .modal-div {
+      width: 100%;
+    }
+
+  }
+
+
+  @media screen and (max-width: 479px) {
+
+
   }

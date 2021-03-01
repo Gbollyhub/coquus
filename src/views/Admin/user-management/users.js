@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Pagination from '@material-ui/lab/Pagination';
 export default function Users() {
 
@@ -22,7 +22,6 @@ export default function Users() {
                 <option>Pancakes</option>
             </select>
         </div>
-
         <div className="styled">
         <select>
                 <option selected>Filter</option>
@@ -31,8 +30,6 @@ export default function Users() {
                 <option>Pancakes</option>
             </select>
         </div>
-
-
         <div className="styled">
         <select>
                 <option selected>Actions</option>
@@ -83,5 +80,5 @@ export default function Users() {
 										</div>
       </div>
 			</>
-    )
+    );
 }

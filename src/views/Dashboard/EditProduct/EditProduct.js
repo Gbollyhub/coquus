@@ -3,9 +3,9 @@ import Header from '../../../components/Dashboard/Header';
 import Sidebar from '../../../components/Dashboard/Sidebar';
 import '../Dashboard.css';
 import './EditProduct.css';
-import uploadIcon from '../upload-icon.svg'
-import SuccessAlert from '../../../components/Dashboard/UI/successModal/success'
-import FailedAlert from '../../../components/Dashboard/UI/errorModal/error'
+import uploadIcon from '../upload-icon.svg';
+// import SuccessAlert from '../../../components/Dashboard/UI/successModal/success';
+// import FailedAlert from '../../../components/Dashboard/UI/errorModal/error';
 export default function CreateProduct() {
 
   

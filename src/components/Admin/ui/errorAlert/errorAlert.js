@@ -1,5 +1,5 @@
-import React from 'react'
-import './errorAlert.css'
+import React from 'react';
+import './errorAlert.css';
 export default function errorAlert(props) {
     return(
         <>

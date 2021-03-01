@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import ErrorAlert from '../../../components/Admin/ui/errorAlert/errorAlert'
-import { Redirect } from 'react-router-dom'
-import { Link } from 'react-router-dom'
-export default function Login(props) {
+import React from 'react';
+// import ErrorAlert from '../../../components/Admin/ui/errorAlert/errorAlert'
+import { Link } from 'react-router-dom';
+export default function Login() {
 
 
         return(
@@ -45,5 +44,5 @@ export default function Login(props) {
             </div>
 						</span>
 						</span>
-        )
+        );
     }

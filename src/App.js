@@ -19,15 +19,15 @@ import Notification from './views/Dashboard/Notification/Notification';
 import Profile from './views/Dashboard/Profile/Profile';
 
 
-import Login from './views/Admin/login/login'
-import Overview from './views/Admin/overview/overview'
-import Users from './views/Admin/users/users'
-import Merchants from './views/Admin/merchants/merchants'
-import AdminTransactions from './views/Admin/transactions/transactions'
-import Requests from './views/Admin/requests/requests'
-import UserManagement from './views/Admin/user-management/user'
-import CreateRole from './views/Admin/user-management/Roles/createRoles'
-import EditRole from './views/Admin/user-management/Roles/editRoles'
+import Login from './views/Admin/login/login';
+import Overview from './views/Admin/overview/overview';
+import Users from './views/Admin/users/users';
+import Merchants from './views/Admin/merchants/merchants';
+import AdminTransactions from './views/Admin/transactions/transactions';
+import Requests from './views/Admin/requests/requests';
+import UserManagement from './views/Admin/user-management/user';
+import CreateRole from './views/Admin/user-management/Roles/createRoles';
+import EditRole from './views/Admin/user-management/Roles/editRoles';
 
 
 	

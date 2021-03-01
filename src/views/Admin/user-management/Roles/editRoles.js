@@ -1,8 +1,8 @@
 
-import React from 'react'
-import Leftbar from '../../../../components/Admin/leftbar/leftbar'
-import Rightbar from '../../../../components/Admin/rightbar/rightbar'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Leftbar from '../../../../components/Admin/leftbar/leftbar';
+import Rightbar from '../../../../components/Admin/rightbar/rightbar';
+import { Link } from 'react-router-dom';
 
 function EditRole() {
 
@@ -68,7 +68,7 @@ function EditRole() {
 </div>
 						</span>
 						</span>
-    )
+    );
 
 }
 

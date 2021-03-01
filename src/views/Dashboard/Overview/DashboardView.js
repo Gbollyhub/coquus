@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../../components/Dashboard/Header';
 import Sidebar from '../../../components/Dashboard/Sidebar';
 import './DashboardView.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 export default function DashboardView() {
 	return (
 		<span>
@@ -38,83 +38,83 @@ export default function DashboardView() {
 								<div className="w-col w-col-6">
 									<div className="af-class-overview-sub-header">Recent Transactions</div>
 									<div className="af-class-overview-table-div">
-									<table className="app-table2">
-										<tr className="app-table2-row">
-											<th className="app-table2-header">Trans. Title</th>
-											<th className="app-table2-header">Price</th>
-											<th className="app-table2-header">Status</th>
+									<table className="dashboard-table">
+										<tr className="dashboard-table-row">
+											<th className="dashboard-table-header">Trans. Title</th>
+											<th className="dashboard-table-header">Price</th>
+											<th className="dashboard-table-header">Status</th>
 										</tr>
-										<tr className="app-table2-row">
-											<td className="app-table2-data">Pay-in for Product-LO-12829|Large Burger</td>
-											<td className="app-table2-data">$200</td>
-											<td className="app-table2-data" style={{ color: '#9be645'}}>Success</td>
+										<tr className="dashboard-table-row">
+											<td className="dashboard-table-data">Pay-in for Product-LO-12829|Large Burger</td>
+											<td className="dashboard-table-data">$200</td>
+											<td className="dashboard-table-data" style={{ color: '#9be645'}}>Success</td>
 										</tr>
-										<tr className="app-table2-row">
-											<td className="app-table2-data">Pay-in for Product-LO-12829|Large Burger</td>
-											<td className="app-table2-data">$200</td>
-											<td className="app-table2-data" style={{ color: '#eb3b3b'}}>Failed</td>
+										<tr className="dashboard-table-row">
+											<td className="dashboard-table-data">Pay-in for Product-LO-12829|Large Burger</td>
+											<td className="dashboard-table-data">$200</td>
+											<td className="dashboard-table-data" style={{ color: '#eb3b3b'}}>Failed</td>
 										</tr>
-										<tr className="app-table2-row">
-											<td className="app-table2-data">Pay-in for Product-LO-12829|Large Burger</td>
-											<td className="app-table2-data">$200</td>
-											<td className="app-table2-data" style={{ color: '#9be645'}}>Success</td>
+										<tr className="dashboard-table-row">
+											<td className="dashboard-table-data">Pay-in for Product-LO-12829|Large Burger</td>
+											<td className="dashboard-table-data">$200</td>
+											<td className="dashboard-table-data" style={{ color: '#9be645'}}>Success</td>
 										</tr>
-										<tr className="app-table2-row">
-											<td className="app-table2-data">Pay-in for Product-LO-12829|Large Burger</td>
-											<td className="app-table2-data">$200</td>
-											<td className="app-table2-data" style={{ color: '#eb3b3b'}}>Failed</td>
+										<tr className="dashboard-table-row">
+											<td className="dashboard-table-data">Pay-in for Product-LO-12829|Large Burger</td>
+											<td className="dashboard-table-data">$200</td>
+											<td className="dashboard-table-data" style={{ color: '#eb3b3b'}}>Failed</td>
 										</tr>
-										<tr className="app-table2-row">
-											<td className="app-table2-data">Pay-in for Product-LO-12829|Large Burger</td>
-											<td className="app-table2-data">$200</td>
-											<td className="app-table2-data" style={{ color: '#9be645'}}>Success</td>
+										<tr className="dashboard-table-row">
+											<td className="dashboard-table-data">Pay-in for Product-LO-12829|Large Burger</td>
+											<td className="dashboard-table-data">$200</td>
+											<td className="dashboard-table-data" style={{ color: '#9be645'}}>Success</td>
 										</tr>
 										</table>
-										<Link to= "/dashboard/transactions" ><div className = "table-view-all">View All</div></Link>
+										<Link to= "/dashboard/transactions" ><div className = "dashboard-table-view-all">View All</div></Link>
 									</div>
 								</div>
 								<div className="w-col w-col-6">
 									<div className="af-class-overview-sub-header">Recent Orders</div>
 									<div className="af-class-overview-table-div">
-									<table className="app-table2">
-										<tr className="app-table2-row">
-											<th className="app-table2-header">Product Name</th>
-											<th className="app-table2-header">Price</th>
-											<th className="app-table2-header">Quantity</th>
-											<th className="app-table2-header">Status</th>
+									<table className="dashboard-table">
+										<tr className="dashboard-table-row">
+											<th className="dashboard-table-header">Product Name</th>
+											<th className="dashboard-table-header">Price</th>
+											<th className="dashboard-table-header">Quantity</th>
+											<th className="dashboard-table-header">Status</th>
 										</tr>
-										<tr className="app-table2-row">
-											<td className="app-table2-data">Large BBQ Pizza combo max</td>
-											<td className="app-table2-data">$30</td>
-											<td className="app-table2-data">2</td>
-											<td className="app-table2-data" style={{ color: '#9be645'}}>Delivered</td>
+										<tr className="dashboard-table-row">
+											<td className="dashboard-table-data">Large BBQ Pizza combo max</td>
+											<td className="dashboard-table-data">$30</td>
+											<td className="dashboard-table-data">2</td>
+											<td className="dashboard-table-data" style={{ color: '#9be645'}}>Delivered</td>
 										</tr>
-										<tr className="app-table2-row">
-											<td className="app-table2-data">Large BBQ Pizza combo max</td>
-											<td className="app-table2-data">$30</td>
-											<td className="app-table2-data">2</td>
-											<td className="app-table2-data" style={{ color: '#e6b629'}}>Pending</td>
+										<tr className="dashboard-table-row">
+											<td className="dashboard-table-data">Large BBQ Pizza combo max</td>
+											<td className="dashboard-table-data">$30</td>
+											<td className="dashboard-table-data">2</td>
+											<td className="dashboard-table-data" style={{ color: '#e6b629'}}>Pending</td>
 										</tr>
-										<tr className="app-table2-row">
-											<td className="app-table2-data">Large BBQ Pizza combo max</td>
-											<td className="app-table2-data">$30</td>
-											<td className="app-table2-data">2</td>
-											<td className="app-table2-data" style={{ color: '#eb3b3b'}}>Cancelled</td>
+										<tr className="dashboard-table-row">
+											<td className="dashboard-table-data">Large BBQ Pizza combo max</td>
+											<td className="dashboard-table-data">$30</td>
+											<td className="dashboard-table-data">2</td>
+											<td className="dashboard-table-data" style={{ color: '#eb3b3b'}}>Cancelled</td>
 										</tr>
-										<tr className="app-table2-row">
-											<td className="app-table2-data">Large BBQ Pizza combo max</td>
-											<td className="app-table2-data">$30</td>
-											<td className="app-table2-data">2</td>
-											<td className="app-table2-data" style={{ color: '#9be645'}}>Delivered</td>
+										<tr className="dashboard-table-row">
+											<td className="dashboard-table-data">Large BBQ Pizza combo max</td>
+											<td className="dashboard-table-data">$30</td>
+											<td className="dashboard-table-data">2</td>
+											<td className="dashboard-table-data" style={{ color: '#9be645'}}>Delivered</td>
 										</tr>
-										<tr className="app-table2-row">
-											<td className="app-table2-data">Large BBQ Pizza combo max</td>
-											<td className="app-table2-data">$30</td>
-											<td className="app-table2-data">2</td>
-											<td className="app-table2-data" style={{ color: '#e6b629'}}>Pending</td>
+										<tr className="dashboard-table-row">
+											<td className="dashboard-table-data">Large BBQ Pizza combo max</td>
+											<td className="dashboard-table-data">$30</td>
+											<td className="dashboard-table-data">2</td>
+											<td className="dashboard-table-data" style={{ color: '#e6b629'}}>Pending</td>
 										</tr>
 										</table>
-										<Link to= "/dashboard/orders"><div className = "table-view-all">View All</div></Link>
+										<Link to= "/dashboard/orders"><div className = "dashboard-table-view-all">View All</div></Link>
 									</div>
 								</div>
 							</div>

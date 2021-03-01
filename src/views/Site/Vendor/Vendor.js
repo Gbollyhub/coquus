@@ -1,15 +1,40 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
 import Navbar2 from '../../../components/Navbar2/Navbar2';
 import Footer from '../../../components/Site/Footer';
+import Cart from '../../../components/Site/Cart';
 import './Vendor.css';
 import '../Site.css';
 
  const Vendor = () => {
+
+	const [cartState, setCartState] = useState(false);
+
+	const openCart = () => {
+    setCartState(true);
+	};
+
+	const closeCart = () => {
+		setCartState(false);
+	};
+
   return (
 		<span>
 		<span className="af-view">
 				<div className="af-class-app-body">
+      
+			{
+				cartState ? 
+
+				<div className="modal-overlay2">
+				<div className="modal-div2">
+			 <Cart/>
+			 <div onClick = { closeCart } className="modal-close2">Close</div>
+				</div>
+				</div>
+				:
+				null
+			}
+			
 	<Navbar2/>
   <div className="vendor-banner">
     <div className="banner-div">
@@ -73,83 +98,12 @@ import '../Site.css';
       </div>
     </div>
     <div className="cart-col">
-      <div className="cart-card">
-        <div className="cart-list">
-          <div className="cart-quantity">
-            <div className="menu-increment">
-              <div className="increment-plus">+</div>
-              <div className="increment-value">1</div>
-              <div className="increment-minus">-</div>
-            </div>
-          </div>
-          <div className="cart-product">
-            <div className="cart-product-name">Large Burger</div>
-            <div className="cart-other-details">This is some text inside</div>
-            <div className="cart-action">Remove</div>
-          </div>
-          <div className="cart-unit-price">
-            <div className="cart-unit-value">$200</div>
-          </div>
-        </div>
-        <div className="cart-list">
-          <div className="cart-quantity">
-            <div className="menu-increment">
-              <div className="increment-plus">+</div>
-              <div className="increment-value">1</div>
-              <div className="increment-minus">-</div>
-            </div>
-          </div>
-          <div className="cart-product">
-            <div className="cart-product-name">Large Burger</div>
-            <div className="cart-other-details">This is some text inside</div>
-            <div className="cart-action">Remove</div>
-          </div>
-          <div className="cart-unit-price">
-            <div className="cart-unit-value">$200</div>
-          </div>
-        </div>
-        <div className="cart-list">
-          <div className="cart-quantity">
-            <div className="menu-increment">
-              <div className="increment-plus">+</div>
-              <div className="increment-value">1</div>
-              <div className="increment-minus">-</div>
-            </div>
-          </div>
-          <div className="cart-product">
-            <div className="cart-product-name">Large Burger</div>
-            <div className="cart-other-details">This is some text inside</div>
-            <div className="cart-action">Remove</div>
-          </div>
-          <div className="cart-unit-price">
-            <div className="cart-unit-value">$200</div>
-          </div>
-        </div>
-        <div className="cart-list">
-          <div className="cart-quantity">
-            <div className="menu-increment">
-              <div className="increment-plus">+</div>
-              <div className="increment-value">1</div>
-              <div className="increment-minus">-</div>
-            </div>
-          </div>
-          <div className="cart-product">
-            <div className="cart-product-name">Large Burger</div>
-            <div className="cart-other-details">This is some text inside</div>
-            <div className="cart-action">Remove</div>
-          </div>
-          <div className="cart-unit-price">
-            <div className="cart-unit-value">$200</div>
-          </div>
-        </div>
-        <div className="cart-summary">
-          <div className="cart-summary-col-1">Subtotal (4 meals)</div>
-          <div className="cart-summary-col-2">$400</div>
-        </div>
-        <Link to="/checkout"><div className="checkout-btn">Checkout</div></Link>
-      </div>
+		<div className="cart-card">
+     <Cart/>
+		 </div>
     </div>
   </div>
+	<div onClick={ openCart } className="mobile-cart-panel">View Cart (2)</div>
 	<Footer />
 	  </div>
 		</span>

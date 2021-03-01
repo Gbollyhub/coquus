@@ -19,13 +19,13 @@ export default function Transactions() {
 						<div className="af-class-dashboard-col-2">
 							<div className="af-class-dasboard-col-2-header">Your Notifications<span className="af-class-text-span-5">!</span> </div>
 							<div className="af-class-dashboard-overview-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit sodor.</div>
-							<div className="app-table-actions">
-        <div className="app-table-search">
+							<div className="dashboard-s-table-actions">
+        <div className="dashboard-s-table-search">
           <div>
          <input type="text" className="app-input-search" name="name" data-name="Name" placeholder="Search..." id="name"/>
           </div>
         </div>
-        <div className="app-table-buttons">
+        <div className="dashboard-s-table-buttons">
 		<select className="app-input-select">
   <option>Filter By</option>
   <option>Successful</option>

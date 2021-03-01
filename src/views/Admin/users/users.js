@@ -1,8 +1,6 @@
-
-import React, { useState, useEffect } from 'react'
-import Leftbar from '../../../components/Admin/leftbar/leftbar'
-import Rightbar from '../../../components/Admin/rightbar/rightbar'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Leftbar from '../../../components/Admin/leftbar/leftbar';
+import Rightbar from '../../../components/Admin/rightbar/rightbar';
 import Pagination from '@material-ui/lab/Pagination';
 
 export default function Product() {
@@ -143,5 +141,5 @@ export default function Product() {
 </div>
 						</span>
 						</span>
-    )
+    );
 }

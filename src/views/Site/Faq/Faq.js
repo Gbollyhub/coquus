@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../../../components/Site/Footer';
 import Navbar from '../../../components/Navbar/Navbar';
-import './Faq.css'
+import './Faq.css';
 export default function Faq() {
 
 	return (

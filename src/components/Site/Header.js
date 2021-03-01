@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import './nav.css'
-import React, { useState } from 'react'
-import user from './user.png'
-import './nav.css'
+import './nav.css';
+import React, { useState } from 'react';
+import user from './user.png';
+import './nav.css';
 function Header(props) {
-	const [mobileMenu, setMobileMenu] = useState(false)
+	const [mobileMenu, setMobileMenu] = useState(false);
 
 	const openMobileMenu = () => {
-		setMobileMenu(true)
-	}
+		setMobileMenu(true);
+	};
 
 	const closeMobileMenu = () => {
-		setMobileMenu(false)
-	}
+		setMobileMenu(false);
+	};
 
 	return (
 		<div>

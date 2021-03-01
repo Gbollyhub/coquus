@@ -1,12 +1,12 @@
 
-import React  from 'react'
-import Leftbar from '../../../components/Admin/leftbar/leftbar'
-import Rightbar from '../../../components/Admin/rightbar/rightbar'
+import React  from 'react';
+import Leftbar from '../../../components/Admin/leftbar/leftbar';
+import Rightbar from '../../../components/Admin/rightbar/rightbar';
 
-import '../global.css'
+import '../global.css';
 
 
-export default function Overview( props ) {
+export default function Overview() {
 
         return(
 					<span>
@@ -242,5 +242,5 @@ export default function Overview( props ) {
 					</div>
 						</span>
 						</span>
-        )
+        );
     }

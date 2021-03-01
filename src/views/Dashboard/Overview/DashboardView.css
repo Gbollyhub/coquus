@@ -1,10 +1,10 @@
-.app-table2 {
+.dashboard-table {
     border-collapse: collapse;
     width: 100%;
     overflow: scroll;
   }
 
-  .table-view-all {
+  .dashboard-table-view-all {
     text-align:right;
     color:#eb3b3b;
     font-size:12px;
@@ -13,14 +13,14 @@
     padding: 10px 20px;
   }
   
-  .app-table2-header {
+  .dashboard-table-header {
     text-align: left;
     padding:  10px 15px !important;
     font-size: 12px;
     border-bottom: 1px solid rgb(236, 236, 236);
   }
 
-   .app-table2-data {
+   .dashboard-table-data {
     text-align: left;
     padding: 15px !important;
     font-size: 12px;

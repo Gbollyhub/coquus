@@ -1826,7 +1826,7 @@
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-color: #fff6e7;
+  background-color: #343434;
   text-align: center;
 }
 
@@ -1869,12 +1869,13 @@
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.5;
+  color: white;
 }
 
 .af-view .af-class-footer-link {
   display: block;
   margin-bottom: 10px;
-  color: #444;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 

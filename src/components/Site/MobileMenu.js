@@ -1,7 +1,7 @@
-import React from 'react'
-import user from './user.png'
+import React from 'react';
+import user from './user.png';
 import PropTypes from 'prop-types';
-import './nav.css'
+import './nav.css';
 export default function MobileMenu(props) {
    
 

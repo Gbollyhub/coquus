@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar2 from '../../../components/Navbar2/Navbar2';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import Footer from '../../../components/Site/Footer';
 import './Search.css';
 import '../Site.css';

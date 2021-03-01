@@ -1,6 +1,7 @@
-import { NavLink } from 'react-router-dom'
-import './leftbar.css'
-const Leftbar = ( props ) => {
+import { NavLink } from 'react-router-dom';
+import './leftbar.css';
+
+const Leftbar = () => {
 
     return(
        <div>
@@ -50,7 +51,7 @@ const Leftbar = ( props ) => {
 
       <div className="admin-col-logout" style={{ cursor: 'pointer' }}><span className="text-span-3"></span> Logout</div>
     </div>
-    )
-}
+    );
+};
 
-export default Leftbar
+export default Leftbar;

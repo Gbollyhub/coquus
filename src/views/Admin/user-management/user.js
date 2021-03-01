@@ -1,10 +1,10 @@
 
-import React, { useState, useEffect } from 'react'
-import Leftbar from '../../../components/Admin/leftbar/leftbar'
-import Rightbar from '../../../components/Admin/rightbar/rightbar'
-import { Link } from 'react-router-dom'
-import Users from './users'
-import Roles from './Roles/roles'
+import React, { useState } from 'react';
+import Leftbar from '../../../components/Admin/leftbar/leftbar';
+import Rightbar from '../../../components/Admin/rightbar/rightbar';
+import { Link } from 'react-router-dom';
+import Users from './users';
+import Roles from './Roles/roles';
 
 export default function User() {
         
@@ -12,15 +12,14 @@ export default function User() {
     const [ roles, setRoles] = useState(false);
 
     const changeUsers = () => {
-      setUsers(true)
-      setRoles(false)  
-    }
+      setUsers(true);
+      setRoles(false)  ;
+    };
 
     const changeRoles = () => {
-      setUsers(false)
-      setRoles(true)  
-    }
-
+      setUsers(false);
+      setRoles(true) ;
+    };
 
         return(
 					<span>
@@ -57,5 +56,5 @@ export default function User() {
 </div>
 </span>
 </span>
-    )
+    );
 }

@@ -1,5 +1,3 @@
-
-
 const Rightbar = () => {
     return(
        <div>
@@ -24,7 +22,7 @@ const Rightbar = () => {
         <div className="misc-card-sub">1000</div>
       </div>
        </div>
-    )
-}
+    );
+};
 
-export default Rightbar
+export default Rightbar;
